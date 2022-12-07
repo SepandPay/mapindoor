@@ -1,3 +1,18 @@
+@charset "UTF-8";
+
+/*------------------------------------- font-family -----------------------------------------------*/
+
+
+
+ @font-face {
+  font-family: yekan;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/yekan/Yekan.eot");
+  src: url("../fonts/yekan/Yekan.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/yekan/Yekan.woff") format("woff"),
+    url("../fonts/yekan/Yekan.ttf") format("truetype");
+}
 * {
     outline: 0;
     box-sizing: border-box;
@@ -27,7 +42,7 @@ body, html {
     background: #18181b;
     font-size: 18px;
     color: #c0c0c7;
-    font-family: Roboto, sans-serif;
+    font-family: "yekan", sans-serif;
     font-weight: 400;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
@@ -1425,7 +1440,7 @@ hr {
     vertical-align: top;
     font-size: 49px;
     line-height: 1;
-    font-family: "Playfair Display";
+    font-family: yekan,sans-serif;
     color: #c0c0c7;
     font-weight: 700;
     text-decoration: none
@@ -2266,7 +2281,7 @@ hr {
 .hero-main-slider .slide-titles .title {
     position: relative;
     display: block;
-    font-family: "Playfair Display";
+    font-family: "yekan",sans-serif;
     font-size: 108px;
     line-height: 1;
     font-weight: 500;

@@ -1,12 +1,15 @@
 /* Recommended styles for Splitting */
-.splitting .word,
-.splitting .char {
+/*.splitting .word,*/
+/*.splitting .char {*/
+/*  display: inline-block;*/
+/*}*/
+.splitting .word{
   display: inline-block;
 }
-
 /* Psuedo-element chars */
 .splitting .char {
   position: relative;
+  display: contents;
 }
 
 /**
@@ -23,19 +26,20 @@
   visibility: hidden;
   transition: inherit;
   user-select: none;
+  display: none;
 }
 
 /* Expanded CSS Variables */
 
 .splitting {
-  /* The center word index */
-  --word-center: calc((var(--word-total) - 1) / 2);
+  /*!* The center word index *!*/
+  /*--word-center: calc((var(--word-total) - 1) / 2);*/
 
-  /* The center character index */
-  --char-center: calc((var(--char-total) - 1) / 2);
+  /*!* The center character index *!*/
+  /*--char-center: calc((var(--char-total) - 1) / 2);*/
 
-  /* The center character index */
-  --line-center: calc((var(--line-total) - 1) / 2);
+  /*!* The center character index *!*/
+  /*--line-center: calc((var(--line-total) - 1) / 2);*/
 }
 
 .splitting .word {
