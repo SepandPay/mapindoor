@@ -274,7 +274,7 @@ input[type=submit] {
 }
 
 .btn-link:hover, .btn:hover, a.btn-link:hover, a.btn:hover {
-    color: #fff
+    color: #212529
 }
 
 .btn-link:hover:before, .btn:hover:before, a.btn-link:hover:before, a.btn:hover:before {
