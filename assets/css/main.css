@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import './custom.css';
 
 /*------------------------------------- font-family -----------------------------------------------*/
 
@@ -13,6 +14,10 @@
     url("../fonts/yekan/Yekan.woff") format("woff"),
     url("../fonts/yekan/Yekan.ttf") format("truetype");
 }
+:root{
+    --green-color:#4DF7C4;
+}
+
 * {
     outline: 0;
     box-sizing: border-box;
@@ -54,21 +59,21 @@ body.no-scroll {
 }
 
 a {
-    color: #eb6165;
+    color: var(--green-color);
     text-decoration: none;
     cursor: pointer
 }
 
 a:link {
-    color: #eb6165
+    color: var(--green-color)
 }
 
 a:active {
-    color: #eb6165
+    color: var(--green-color)
 }
 
 a:visited {
-    color: #eb6165
+    color: var(--green-color)
 }
 
 a:hover {
@@ -217,7 +222,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #eb6165
+    color: var(--green-color)
 }
 
 .btn, .btn-link, a.btn, a.btn-link, button, input[type=submit] {
@@ -233,7 +238,7 @@ a:hover {
     line-height: 52px;
     text-align: center;
     text-decoration: none;
-    border: 2px solid #eb6165;
+    border: 2px solid var(--green-color);
     outline: 0 !important;
     box-shadow: none !important;
     cursor: pointer;
@@ -250,7 +255,7 @@ a:hover {
 }
 
 input[type=submit] {
-    background-color: #eb6165
+    background-color: var(--green-color)
 }
 
 .btn-link:before, .btn:before, a.btn-link:before, a.btn:before, button:before {
@@ -260,7 +265,7 @@ input[type=submit] {
     top: -50%;
     width: 120%;
     height: 120%;
-    background: #eb6165;
+    background: var(--green-color);
     transition: all .7s cubic-bezier(.3, 0, .3, 1);
     -webkit-transition: all .7s cubic-bezier(.3, 0, .3, 1);
     transform: translate3d(0, -100%, 0) skew(-10deg, -10deg);
@@ -511,7 +516,7 @@ dd {
 
 .wp-block-calendar a {
     text-decoration: none;
-    color: #eb6165
+    color: var(--green-color)
 }
 
 .wp-block-column blockquote:first-child, .wp-block-column ol:first-child, .wp-block-column p:first-child, .wp-block-column ul:first-child {
@@ -636,8 +641,8 @@ hr {
     text-align: center;
     text-decoration: none;
     overflow-wrap: break-word;
-    background-color: #eb6165;
-    border: 1px solid #eb6165;
+    background-color: var(--green-color);
+    border: 1px solid var(--green-color);
     border-radius: 28px;
     color: #fff;
     cursor: pointer;
@@ -658,8 +663,8 @@ hr {
 
 .is-style-outline .wp-block-button__link {
     background-color: transparent;
-    color: #eb6165;
-    border: 1px solid #eb6165
+    color: var(--green-color);
+    border: 1px solid var(--green-color)
 }
 
 .post-content .wp-block-archives {
@@ -859,7 +864,7 @@ hr {
     display: inline-block;
     width: 15px;
     height: 15px;
-    background: #eb6165;
+    background: var(--green-color);
     border-radius: 15px;
     -webkit-animation: spinner .75s cubic-bezier(.17, .37, .43, .67) infinite;
     animation: spinner .75s cubic-bezier(.17, .37, .43, .67) infinite
@@ -883,7 +888,7 @@ hr {
     bottom: 0;
     width: 100%;
     height: 2px;
-    background: #eb6165;
+    background: var(--green-color);
     border-radius: 0;
     -webkit-animation: spinnerline 1s cubic-bezier(.17, .37, .43, .67) infinite;
     animation: spinnerline 1s cubic-bezier(.17, .37, .43, .67) infinite
@@ -1688,7 +1693,7 @@ hr {
 }
 
 .header .logo .logotype__title:first-letter {
-    color: #eb6165
+    color: var(--green-color)
 }
 
 .header .logo .logotype__sub {
@@ -1743,7 +1748,7 @@ hr {
 
 .footer {
     margin: 0;
-    padding: 100px 0 50px 0;
+    padding: 20px 0;
     background: #01010b
 }
 
@@ -1800,7 +1805,7 @@ hr {
     bottom: -10px;
     width: 0;
     height: 2px;
-    background: #eb6165;
+    background: var(--green-color);
     transition: all .3s cubic-bezier(.3, 0, .3, 1);
     -moz-transition: all .3s cubic-bezier(.3, 0, .3, 1);
     -webkit-transition: all .3s cubic-bezier(.3, 0, .3, 1);
@@ -1915,7 +1920,7 @@ hr {
     display: inline-block;
     font-size: 1.25em;
     width: .55em;
-    color: #eb6165;
+    color: var(--green-color);
     font-style: normal
 }
 
@@ -2112,7 +2117,7 @@ hr {
 
 .section.full-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active, .section.half-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active, .section.main-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     color: #fff;
-    background: #eb6165
+    background: var(--green-color)
 }
 
 .section.half-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -2193,7 +2198,7 @@ hr {
     top: 50%;
     width: 0;
     height: 1px;
-    background: #eb6165;
+    background: var(--green-color);
     transition: all .3s cubic-bezier(.3, 0, .3, 1);
     -moz-transition: all .3s cubic-bezier(.3, 0, .3, 1);
     -webkit-transition: all .3s cubic-bezier(.3, 0, .3, 1);
@@ -2296,7 +2301,7 @@ hr {
     bottom: -30px;
     width: 0;
     height: 1px;
-    background: #eb6165;
+    background: var(--green-color);
     transition: all .6s cubic-bezier(.3, 0, .3, 1) .4s;
     -moz-transition: all .6s cubic-bezier(.3, 0, .3, 1) .4s;
     -webkit-transition: all .6s cubic-bezier(.3, 0, .3, 1) .4s;
@@ -2633,7 +2638,7 @@ body .hero-main-slider .swiper-pagination {
 }
 
 .m-titles .m-category a {
-    color: #eb6165;
+    color: var(--green-color);
     font-weight: 700;
     text-decoration: none
 }
@@ -2644,7 +2649,8 @@ body .hero-main-slider .swiper-pagination {
     font-size: 42px;
     line-height: 1.3;
     color: #fff;
-    font-weight: 900
+    font-weight: 900;
+    text-align: right;
 }
 
 @media screen and (min-width: 1080px) {
@@ -2703,7 +2709,7 @@ body .hero-main-slider .swiper-pagination {
 }
 
 .h-titles .h-subtitle.red {
-    color: #eb6165
+    color: var(--green-color)
 }
 
 .h-titles .h-text {
@@ -2757,7 +2763,8 @@ body .hero-main-slider .swiper-pagination {
 
 .wrapper .section.started-heading {
     margin-top: 250px;
-    margin-bottom: 100px
+    margin-bottom: 100px;
+    float:right;
 }
 
 .wrapper .section.started-heading + .section.section-inner.m-archive {
@@ -3027,7 +3034,7 @@ body .hero-main-slider .swiper-pagination {
 
 .experience-carousel .slide-titles .label {
     font-size: 20px;
-    color: #eb6165;
+    color: var(--green-color);
     font-weight: 700
 }
 
@@ -3319,7 +3326,7 @@ body .hero-main-slider .swiper-pagination {
     width: 0;
     max-width: 60%;
     height: 2px;
-    background: #eb6165;
+    background: var(--green-color);
     transition: all .3s cubic-bezier(.3, 0, .3, 1);
     -moz-transition: all .3s cubic-bezier(.3, 0, .3, 1);
     -webkit-transition: all .3s cubic-bezier(.3, 0, .3, 1);
@@ -3504,7 +3511,7 @@ body .hero-main-slider .swiper-pagination {
 }
 
 .works-item .desc .category {
-    color: #eb6165;
+    color: var(--green-color);
     font-weight: 700;
     display: block
 }
@@ -3792,7 +3799,7 @@ body .hero-main-slider .swiper-pagination {
     bottom: 0;
     width: 0;
     height: 1px;
-    background: #eb6165;
+    background: var(--green-color);
     transition: all .3s cubic-bezier(.3, 0, .3, 1);
     -moz-transition: all .3s cubic-bezier(.3, 0, .3, 1);
     -webkit-transition: all .3s cubic-bezier(.3, 0, .3, 1);
@@ -3837,7 +3844,7 @@ body .swiper-container-horizontal > .swiper-pagination-progressbar {
 }
 
 body .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-    background: #eb6165;
+    background: var(--green-color);
     opacity: 1
 }
 
@@ -3890,7 +3897,7 @@ body .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
 }
 
 .c-list ul li strong {
-    color: #eb6165
+    color: var(--green-color)
 }
 
 .c-list ul li a {
@@ -4215,7 +4222,7 @@ body .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
 
 .archive-item .desc .category {
     margin-bottom: 10px;
-    color: #eb6165;
+    color: var(--green-color);
     font-weight: 700
 }
 
@@ -4264,7 +4271,7 @@ body .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
     vertical-align: top;
     font-size: 59px;
     line-height: 69px;
-    color: #eb6165
+    color: var(--green-color)
 }
 
 .services-item .name {
@@ -4576,7 +4583,7 @@ pre code {
 }
 
 .post-page-numbers, a.page-numbers {
-    border: 1px solid #eb6165
+    border: 1px solid var(--green-color)
 }
 
 a.page-numbers.prev {
@@ -4595,7 +4602,7 @@ a.page-numbers.next .icon-arrow, a.page-numbers.prev .icon-arrow {
     left: 0;
     width: 30px;
     height: 2px;
-    background: #eb6165
+    background: var(--green-color)
 }
 
 a.page-numbers.next .icon-arrow:after, a.page-numbers.next .icon-arrow:before, a.page-numbers.prev .icon-arrow:after, a.page-numbers.prev .icon-arrow:before {
@@ -4605,7 +4612,7 @@ a.page-numbers.next .icon-arrow:after, a.page-numbers.next .icon-arrow:before, a
     left: 0;
     width: 15px;
     height: 2px;
-    background: #eb6165;
+    background: var(--green-color);
     -ms-transform: rotate(35deg);
     transform: rotate(35deg);
     -webkit-transform: rotate(35deg);
@@ -4624,8 +4631,8 @@ a.page-numbers.next .icon-arrow:after, a.page-numbers.prev .icon-arrow:after {
 }
 
 .page-numbers.current, .post-page-numbers.current, a.page-numbers.current, a.post-page-numbers.current {
-    background: #eb6165;
-    border-color: #eb6165
+    background: var(--green-color);
+    border-color: var(--green-color)
 }
 
 .col__sedebar {
@@ -4723,7 +4730,7 @@ a.page-numbers.next .icon-arrow:after, a.page-numbers.prev .icon-arrow:after {
     bottom: -20px;
     width: 30px;
     height: 4px;
-    background: #eb6165;
+    background: var(--green-color);
     -webkit-transition: opacity .3s linear, color .3s linear, -webkit-transform .3s cubic-bezier(.3, 0, .3, 1);
     transition: opacity .3s linear, color .3s linear, -webkit-transform .3s cubic-bezier(.3, 0, .3, 1);
     -o-transition: transform .3s cubic-bezier(.3, 0, .3, 1), opacity .3s linear, color .3s linear;
@@ -4755,7 +4762,7 @@ a.page-numbers.next .icon-arrow:after, a.page-numbers.prev .icon-arrow:after {
 }
 
 .content-sidebar ul li a:hover, .post-content .wp-block-archives li a:hover {
-    color: #eb6165;
+    color: var(--green-color);
     text-decoration: underline
 }
 
@@ -4808,7 +4815,7 @@ a.page-numbers.next .icon-arrow:after, a.page-numbers.prev .icon-arrow:after {
 }
 
 .wp-block-calendar tfoot a {
-    color: #eb6165
+    color: var(--green-color)
 }
 
 .content-sidebar a {
@@ -4836,7 +4843,7 @@ a.page-numbers.next .icon-arrow:after, a.page-numbers.prev .icon-arrow:after {
     top: 12px;
     width: 5px;
     height: 1px;
-    background: #eb6165
+    background: var(--green-color)
 }
 
 .wp-block-rss {
@@ -4851,7 +4858,7 @@ a.page-numbers.next .icon-arrow:after, a.page-numbers.prev .icon-arrow:after {
 
 .content-sidebar ul li a.rsswidget, .wp-block-rss li a {
     display: block;
-    color: #eb6165;
+    color: var(--green-color);
     font-weight: 700;
     text-decoration: none
 }
@@ -4893,7 +4900,7 @@ a.page-numbers.next .icon-arrow:after, a.page-numbers.prev .icon-arrow:after {
     color: #fff;
     text-transform: none;
     text-decoration: none;
-    border: 1px solid #eb6165
+    border: 1px solid var(--green-color)
 }
 
 .content-sidebar ul.menu {
@@ -5143,8 +5150,8 @@ a.page-numbers.next .icon-arrow:after, a.page-numbers.prev .icon-arrow:after {
 }
 
 .share-post .share-btn:hover {
-    color: #eb6165;
-    border-color: #eb6165
+    color: var(--green-color);
+    border-color: var(--green-color)
 }
 
 .share-post .share-btn span {
@@ -5232,7 +5239,7 @@ form.post-password-form label {
 }
 
 .post-password-form input[type=submit] {
-    background-color: #eb6165;
+    background-color: var(--green-color);
     border: 0;
     border-radius: 5rem;
     color: #fff;
@@ -5365,7 +5372,7 @@ form.post-password-form label {
 }
 
 .is-style-outline > .wp-block-button__link:not(.has-text-color), .wp-block-button__link.is-style-outline:not(.has-text-color) {
-    color: #eb6165
+    color: var(--green-color)
 }
 
 a.wp-block-button__link {
@@ -5405,7 +5412,7 @@ a.wp-block-button__link {
 }
 
 .error-page__num {
-    color: #eb6165;
+    color: var(--green-color);
     font-size: 220px;
     display: block;
     height: auto;
@@ -6717,7 +6724,7 @@ body .js-testimonials .swiper-pagination .swiper-pagination-bullet {
 body .js-testimonials .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     opacity: 1;
     width: 24px;
-    background: #eb6165
+    background: var(--green-color)
 }
 
 .testimonials-item {
