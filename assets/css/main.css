@@ -1287,6 +1287,7 @@ hr {
 
 .logo-image img {
     max-width: 96px;
+    max-height: 29px;
     float: right;
 }
 
